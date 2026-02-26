@@ -20,7 +20,7 @@ To ensure robust model performance, the pipeline includes comprehensive data pre
 ### 1. Determining Optimal Clusters (Elbow Method & Silhouette Scores)
 Before feeding data into the neural network, we analyze the dataset using K-Means. The Elbow Method and Silhouette plots help us determine the optimal number of clusters.
 
-> 📸 **Add your Elbow Method Plot here:**
+
 <img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/d5fd1823-f6a4-4b3a-8cb2-6d892332fdb8" />
 ![Elbow Method Plot](docs/images/elbow_method.png) 
 *(Replace the path above with the actual image path in your repo)*
