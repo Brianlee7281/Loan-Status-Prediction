@@ -1,13 +1,72 @@
-# Loan-Status-Prediction
+# 🏦 Loan Status Prediction using Deep Learning and K-Means Clustering
 
-1. Objective
-The primary objective of this machine learning project is to build and train a deep learning model to predict Loan Status based on a variety of applicant features, such as income, credit score, employment status, marital status, and other financial or demographic data, ultimately to see the likelyhood of loander paying the debt
-2. Data Pipeline and Preprocessing
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 
+## 📌 Overview
+This repository contains a hybrid machine learning pipeline designed to predict loan approval statuses. The project innovatively combines unsupervised learning (K-Means Clustering) for feature engineering with a supervised Deep Learning model (Multi-Layer Perceptron) built in PyTorch. 
 
+To ensure robust model performance, the pipeline includes comprehensive data preprocessing, handling of class imbalances using SMOTE, and extensive exploratory data analysis (EDA).
 
-<img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/38b7f6fb-076c-4cd5-8f66-715cca0b7e20" />(elbow)
+## 🚀 Key Features
+* **Automated Preprocessing:** Handles missing values and label-encodes categorical variables automatically.
+* **Feature Engineering via Clustering:** Uses K-Means clustering to discover hidden patterns in the applicant data, adding the resulting cluster labels as a new feature to improve predictive power.
+* **Class Imbalance Handling:** Implements **SMOTE** (Synthetic Minority Over-sampling Technique) to oversample the minority class, preventing model bias.
+* **Deep Learning Classifier:** A robust 4-layer MLP built with PyTorch, utilizing Batch Normalization and Dropout for regularization.
 
-<img width="551" height="414" alt="image" src="https://github.com/user-attachments/assets/ba2143fb-8909-4b30-ad24-ca3dcd16daa6" /> (silhouette)
+## 📊 Exploratory Data Analysis & Clustering
 
-3. 
+### 1. Determining Optimal Clusters (Elbow Method & Silhouette Scores)
+Before feeding data into the neural network, we analyze the dataset using K-Means. The Elbow Method and Silhouette plots help us determine the optimal number of clusters.
+
+> 📸 **Add your Elbow Method Plot here:**
+<img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/d5fd1823-f6a4-4b3a-8cb2-6d892332fdb8" />
+![Elbow Method Plot](docs/images/elbow_method.png) 
+*(Replace the path above with the actual image path in your repo)*
+
+> 📸 **Add your Silhouette Score Plot here (e.g., k=2):**
+![Silhouette Plot](docs/images/silhouette_plot.png)
+
+### 2. Correlation Analysis
+Understanding how features interact with each other and the target variable.
+
+> 📸 **Add your Correlation Heatmap here:**
+![Correlation Heatmap](docs/images/correlation_heatmap.png)
+
+### 3. Target Class Distribution
+Visualizing the dataset before applying SMOTE to understand the baseline class imbalance.
+
+> 📸 **Add your Countplot (before SMOTE) here:**
+![Target Distribution](docs/images/target_distribution.png)
+
+## 🧠 Model Architecture & Performance
+
+The predictive model is a Multi-Layer Perceptron (MLP) defined as follows:
+* **Input Layer:** Dynamic based on features + cluster label
+* **Hidden Layers:** 64 -> 32 -> 16 neurons with ReLU activation, Batch Normalization, and 50% Dropout.
+* **Output Layer:** 1 neuron with Sigmoid activation for binary classification.
+
+### Results
+After training for 50 epochs, the model is evaluated on a stratified test set. 
+
+> 📸 **Add your Confusion Matrix Heatmap here:**
+![Confusion Matrix](docs/images/confusion_matrix.png)
+
+*(Note: You can manually type your final Accuracy, F1 Score, Precision, and Recall scores here once you run the final script!)*
+* **Accuracy:** `0.XXXX`
+* **F1 Score:** `0.XXXX`
+* **Precision:** `0.XXXX`
+* **Recall:** `0.XXXX`
+
+## 🛠️ Tech Stack
+* **Data Manipulation:** `pandas`, `numpy`
+* **Machine Learning:** `scikit-learn`, `imbalanced-learn` (SMOTE)
+* **Deep Learning:** `PyTorch`
+* **Data Visualization:** `matplotlib`, `seaborn`
+
+## ⚙️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/loan-status-prediction.git](https://github.com/your-username/loan-status-prediction.git)
