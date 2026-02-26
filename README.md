@@ -22,11 +22,10 @@ Before feeding data into the neural network, we analyze the dataset using K-Mean
 
 
 <img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/d5fd1823-f6a4-4b3a-8cb2-6d892332fdb8" />
-![Elbow Method Plot](docs/images/elbow_method.png) 
-*(Replace the path above with the actual image path in your repo)*
 
-> 📸 **Add your Silhouette Score Plot here (e.g., k=2):**
-![Silhouette Plot](docs/images/silhouette_plot.png)
+
+<img width="551" height="414" alt="image" src="https://github.com/user-attachments/assets/64714c47-6b46-45cd-a0ab-022db5e1183b" />
+
 
 ### 2. Correlation Analysis
 Understanding how features interact with each other and the target variable.
