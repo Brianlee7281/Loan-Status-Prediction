@@ -31,14 +31,14 @@ Before feeding data into the neural network, we analyze the dataset using K-Mean
 ### 2. Correlation Analysis
 Understanding how features interact with each other and the target variable.
 
-> 📸 **Add your Correlation Heatmap here:**
-![Correlation Heatmap](docs/images/correlation_heatmap.png)
+<img width="886" height="803" alt="image" src="https://github.com/user-attachments/assets/4a61fb0b-4b6a-4559-87d6-5ae8fa21d83d" />
+
 
 ### 3. Target Class Distribution
 Visualizing the dataset before applying SMOTE to understand the baseline class imbalance.
 
-> 📸 **Add your Countplot (before SMOTE) here:**
-![Target Distribution](docs/images/target_distribution.png)
+<img width="695" height="374" alt="image" src="https://github.com/user-attachments/assets/215d44fe-f9be-4858-a67b-500ebef7db16" />
+
 
 ## 🧠 Model Architecture & Performance
 
