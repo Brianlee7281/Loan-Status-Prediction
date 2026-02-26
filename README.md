@@ -24,7 +24,8 @@ Before feeding data into the neural network, we analyze the dataset using K-Mean
 <img width="691" height="470" alt="image" src="https://github.com/user-attachments/assets/d5fd1823-f6a4-4b3a-8cb2-6d892332fdb8" />
 
 
-<img width="551" height="414" alt="image" src="https://github.com/user-attachments/assets/64714c47-6b46-45cd-a0ab-022db5e1183b" />
+<img width="551" height="414" alt="image" src="https://github.com/user-attachments/assets/64714c47-6b46-45cd-a0ab-022db5e1183b" /> <img width="551" height="414" alt="image" src="https://github.com/user-attachments/assets/ca9b41ce-1bf3-4bb7-a9b6-35743d2ec6fe" />
+
 
 
 ### 2. Correlation Analysis
