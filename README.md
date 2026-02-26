@@ -31,13 +31,13 @@ Before feeding data into the neural network, we analyze the dataset using K-Mean
 ### 2. Correlation Analysis
 Understanding how features interact with each other and the target variable.
 
-<img width="886" height="803" alt="image" src="https://github.com/user-attachments/assets/4a61fb0b-4b6a-4559-87d6-5ae8fa21d83d" />
+<img width="886" height="803" alt="image" src="https://github.com/user-attachments/assets/2ce12c55-164b-4cc6-a7f8-db104bf050b5" />
 
 
 ### 3. Target Class Distribution
 Visualizing the dataset before applying SMOTE to understand the baseline class imbalance.
 
-<img width="695" height="374" alt="image" src="https://github.com/user-attachments/assets/215d44fe-f9be-4858-a67b-500ebef7db16" />
+<img width="695" height="374" alt="image" src="https://github.com/user-attachments/assets/1a6e8844-aca7-4703-aba7-3b9b49f2f4fc" />
 
 
 ## 🧠 Model Architecture & Performance
@@ -50,14 +50,23 @@ The predictive model is a Multi-Layer Perceptron (MLP) defined as follows:
 ### Results
 After training for 50 epochs, the model is evaluated on a stratified test set. 
 
-> 📸 **Add your Confusion Matrix Heatmap here:**
-![Confusion Matrix](docs/images/confusion_matrix.png)
+<img width="640" height="547" alt="image" src="https://github.com/user-attachments/assets/1959f52d-916c-4838-80b5-2a2ac7db768d" />
 
-*(Note: You can manually type your final Accuracy, F1 Score, Precision, and Recall scores here once you run the final script!)*
-* **Accuracy:** `0.XXXX`
-* **F1 Score:** `0.XXXX`
-* **Precision:** `0.XXXX`
-* **Recall:** `0.XXXX`
+
+**Final Model Evaluation Metrics:**
+* **Accuracy:** `80.19%`
+* **F1 Score:** `0.8757`
+* **Precision:** `0.9367`
+* **Recall:** `0.8222`
+
+**Confusion Matrix Breakdown:**
+* **True Positives (74):** Applicants correctly predicted to get a loan.
+* **True Negatives (11):** Applicants correctly predicted to be denied.
+* **False Positives (5):** Applicants incorrectly predicted to get a loan (Model approved when it shouldn't have).
+* **False Negatives (16):** Applicants incorrectly predicted to be denied (Model rejected when it should have approved).
+
+The high **Precision (93.67%)** indicates that when the model predicts a loan will be approved, it is correct the vast majority of the time, making it a relatively safe and conservative model for a financial institution to use.
+
 
 ## 🛠️ Tech Stack
 * **Data Manipulation:** `pandas`, `numpy`
